@@ -1,8 +1,7 @@
-
-<h2>{{ hero.name | uppercase }} Details</h2><div><span>id: </span>{{hero.id}}</div>
-<div><span>name: </span>{{hero.name}}</div>
-<div><span>age: </span>{{hero.age}}</div>
-
-<h2>{{ heroine.name | uppercase }} Details</h2><div><span>id: </span>{{heroine.id}}</div>
-<div><span>name: </span>{{heroine.name}}</div>
-<div><span>age: </span>{{heroine.age}}</div>
+<h2>{{ hero.name | uppercase }} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name">
+    </label>
+</div>
